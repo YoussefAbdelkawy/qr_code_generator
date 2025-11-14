@@ -18,6 +18,7 @@ try:
         exit()
 except requests.exceptions.RequestException:
     print("URL is not reachable or invalid")
+    exit()
 file_path="C:\\Users\\yusef\\Desktop\\qrcode.png"
 qr=qrcode.QRCode()
 qr.add_data(url)
