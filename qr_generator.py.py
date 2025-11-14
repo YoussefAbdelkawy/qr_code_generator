@@ -15,6 +15,7 @@ try:
         print("URL is valid and reachable")
     else:
         print(f"URL exists but returned status code: {response.status_code}")
+        exit()
 except requests.exceptions.RequestException:
     print("URL is not reachable or invalid")
 file_path="C:\\Users\\yusef\\Desktop\\qrcode.png"
